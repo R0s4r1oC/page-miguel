@@ -1,0 +1,14 @@
+clay==4.1
+colorama==0.4.4
+dnspython==1.16.0
+eventlet==0.30.2
+greenlet==1.0.0
+gunicorn==20.1.0
+hecto==1.200708
+Jinja2==2.11.3
+MarkupSafe==1.1.1
+multipart==0.2.4
+pyceo==2.200716
+PyYAML==5.4.1
+six==1.15.0
+whitenoise==4.1.4

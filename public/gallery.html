@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <title>Gallery Page</title>
+  <link rel="stylesheet" href="static/css/normalize.css">
+  <link rel="stylesheet" href="static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css?v=1.0">
+  <meta name="theme-color" content="#f6f2ef">
+  <link rel="icon" href="static/favicon.svg">
+  <link rel="mask-icon" href="static/mask-icon.svg" color="#000000">
+  <link rel="apple-touch-icon" href="static/apple-touch-icon.png">
+  <link rel="manifest" href="static/manifest.json">
+  <link type="text/plain" rel="author" href="humans.txt">
+  <script src="static/scripts.js?v=1.0" defer></script>
+  
+<link rel="stylesheet" href="static/css/lightgallery.min.css">
+
+</head>
+<body class="article-pg">
+  <header class="mt-0 pt-0">
+    <div class="bg-cover clearfix pt-3">
+        <h2 class="logo"><a href="index.html">Shahala</a></h2>
+        <nav class="nav nav-fill mx-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" target="_blank"><i class="fas fa-rss"></i></a>
+            </li>
+        </nav>
+        <input type="text" id="nav-search" class="nav-search mx-auto" name="" class="form-control">
+        <div class="ml-0 mr-0 pb-1">
+            <nav class="navbar navbar-expand-md">
+                <button class="navbar-toggler ml-auto" data-target="#my-nav" data-toggle="collapse"
+                    aria-controls="my-nav" aria-expanded="false" onclick="myFunction(this)"
+                    aria-label="Toggle navigation">
+                    <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span>
+                </button>
+                <div id="my-nav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="galleries.html">GALLERIES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="articles.html">ARTICLES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <form action="" method="POST">
+                                <div class="input-group mt-0 mx-auto" style="width:16px;">
+                                    <div class="">
+                                        <img src="static/images/search-icon.png" id="toggle-search"
+                                            class="ml-2 toggle-search" alt="search icon">
+                                    </div>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        
+        <ul class="nav nav-fill mx-auto breadc pb-3">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li><img src="static/images/star-shape.png" class="mt-2" alt=""></li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Article</a>
+            </li>
+        </ul>
+        
+    </div>
+</header>
+  
+    <div class="gallery-container-fluid ar-content">
+            <div class="row">
+                <div class="col-lg-9 pr-5">
+                    <div class="card ar-img-over">
+                        <img class="card-img" src="static/images/article-banner.png" alt="">
+                        <div class="card-img-overlay">
+                            <a href="#" class="d-flex align-items-center justify-content-center"><img
+                                    src="static/images/full-screen.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="row date-time mt-3">
+                        <div class="col text-white">
+                            <a href="#"> <i class="fas fa-retweet"></i> Share</a>
+                        </div>
+                        <div class="col text-right"><a href="#"> June 3, 2019 &nbsp; 6 <i
+                                    class="far fa-comments"></i></a></div>
+                    </div>
+                    <h2>Lorem ipsum dolor sit amet, consectetur.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et
+                        dolore magna aliqua. Idque Caesaris facere voluntate liceret: sese habere. Magna pars studiorum,
+                        prodita quaerimus. Magna pars studiorum, prodita quaerimus. Fabio vel iudice vincam, sunt in
+                        culpa qui officia. Vivamus sagittis lacus vel augue laoreet rutrum faucibus.</p>
+                    <div class="row" id="lightgallery">
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init aos-animate" data-aos="fade" data-src="static/images/big-images/nature_big_1.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloremque hic excepturi fugit, sunt impedit fuga tempora, ad amet aliquid?</p>">
+                          <a href="#"><img src="static/images/nature_small_1.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init aos-animate" data-aos="fade" data-src="static/images/big-images/nature_big_2.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam omnis quaerat molestiae, praesentium. Ipsam, reiciendis. Aut molestiae animi earum laudantium.</p>">
+                          <a href="#"><img src="static/images/nature_small_2.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init aos-animate" data-aos="fade" data-src="static/images/big-images/nature_big_3.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem reiciendis, dolorum illo temporibus culpa eaque dolore rerum quod voluptate doloribus.</p>">
+                          <a href="#"><img src="static/images/nature_small_3.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init aos-animate" data-aos="fade" data-src="static/images/big-images/nature_big_4.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim perferendis quae iusto omnis praesentium labore tempore eligendi quo corporis sapiente.</p>">
+                          <a href="#"><img src="static/images/nature_small_4.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init aos-animate" data-aos="fade" data-src="static/images/big-images/nature_big_5.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, voluptatum voluptate tempore aliquam, dolorem distinctio. In quas maiores tenetur sequi.</p>">
+                          <a href="#"><img src="static/images/nature_small_5.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init aos-animate" data-aos="fade" data-src="static/images/big-images/nature_big_6.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum cum culpa blanditiis illum, voluptatum iusto quisquam mollitia debitis quaerat maiores?</p>">
+                          <a href="#"><img src="static/images/nature_small_6.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+              
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init aos-animate" data-aos="fade" data-src="static/images/big-images/nature_big_7.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores similique impedit possimus, laboriosam enim at placeat nihil voluptatibus voluptate hic!</p>">
+                          <a href="#"><img src="static/images/nature_small_7.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init aos-animate" data-aos="fade" data-src="static/images/big-images/nature_big_8.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam vitae sed cum mollitia itaque soluta laboriosam eaque sit ratione, aliquid.</p>">
+                          <a href="#"><img src="static/images/nature_small_8.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init" data-aos="fade" data-src="static/images/big-images/nature_big_9.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem reiciendis debitis beatae facilis quos, enim quis nobis magnam architecto earum!</p>">
+                          <a href="#"><img src="static/images/nature_small_9.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+              
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init" data-aos="fade" data-src="static/images/big-images/nature_big_9.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque officiis magnam, facilis nam eos perspiciatis eligendi pariatur numquam debitis quos!</p>">
+                          <a href="#"><img src="static/images/nature_small_9.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init" data-aos="fade" data-src="static/images/big-images/nature_big_8.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis consequatur quam et, delectus, cum iste ipsa animi eligendi obcaecati nemo.</p>">
+                          <a href="#"><img src="static/images/nature_small_8.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init" data-aos="fade" data-src="static/images/big-images/nature_big_7.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quia illo voluptatibus numquam inventore, ab asperiores molestiae distinctio atque nihil.</p>">
+                          <a href="#"><img src="static/images/nature_small_7.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init" data-aos="fade" data-src="static/images/big-images/nature_big_6.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt unde placeat obcaecati sapiente illum, fuga nostrum necessitatibus delectus maiores magnam.</p>">
+                          <a href="#"><img src="static/images/nature_small_6.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init" data-aos="fade" data-src="static/images/big-images/nature_big_5.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas dignissimos non consectetur. Facilis totam, explicabo nam iure! Veniam modi, molestiae.</p>">
+                          <a href="#"><img src="static/images/nature_small_5.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init" data-aos="fade" data-src="static/images/big-images/nature_big_4.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias minus voluptatibus inventore odio. Iure amet nesciunt a, officia quo ex.</p>">
+                          <a href="#"><img src="static/images/nature_small_4.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+              
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init" data-aos="fade" data-src="static/images/big-images/nature_big_3.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium illum consectetur dolorum consequuntur sint doloribus eveniet deleniti! Illo, quibusdam, earum.</p>">
+                          <a href="#"><img src="static/images/nature_small_3.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init" data-aos="fade" data-src="static/images/big-images/nature_big_2.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ad iure, inventore asperiores, cupiditate optio dignissimos labore quidem totam. Dignissimos.</p>">
+                          <a href="#"><img src="static/images/nature_small_2.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init" data-aos="fade" data-src="static/images/big-images/nature_big_1.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam temporibus totam similique provident delectus quos fugiat officia earum nisi voluptatibus?</p>">
+                          <a href="#"><img src="static/images/nature_small_1.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+              
+              
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init" data-aos="fade" data-src="static/images/big-images/nature_big_1.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe beatae qui aliquid nostrum unde ut officiis omnis delectus sequi deleniti!</p>">
+                          <a href="#"><img src="static/images/nature_small_1.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init" data-aos="fade" data-src="static/images/big-images/nature_big_2.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi iusto vero, soluta porro dicta quaerat tempore magni perferendis aspernatur cupiditate.</p>">
+                          <a href="#"><img src="static/images/nature_small_2.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init" data-aos="fade" data-src="static/images/big-images/nature_big_3.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, minus officiis modi ducimus reprehenderit at ea voluptatum consequuntur enim nulla.</p>">
+                          <a href="#"><img src="static/images/nature_small_3.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init" data-aos="fade" data-src="static/images/big-images/nature_big_4.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis eligendi hic sed, quidem illum ipsa, cum tempora quo reiciendis accusantium.</p>">
+                          <a href="#"><img src="static/images/nature_small_4.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init" data-aos="fade" data-src="static/images/big-images/nature_big_5.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex blanditiis quaerat numquam repellendus pariatur commodi neque animi voluptatum illum dolore?</p>">
+                          <a href="#"><img src="static/images/nature_small_5.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init" data-aos="fade" data-src="static/images/big-images/nature_big_6.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio praesentium maiores, veritatis illum voluptas alias aut unde esse aliquam itaque.</p>">
+                          <a href="#"><img src="static/images/nature_small_6.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+              
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init" data-aos="fade" data-src="static/images/big-images/nature_big_7.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt fugit, non facilis dignissimos minima nostrum nesciunt adipisci, quibusdam cum reprehenderit.</p>">
+                          <a href="#"><img src="static/images/nature_small_7.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init" data-aos="fade" data-src="static/images/big-images/nature_big_8.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos iure delectus obcaecati atque fugit enim quaerat suscipit tenetur in ratione?</p>">
+                          <a href="#"><img src="static/images/nature_small_8.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init" data-aos="fade" data-src="static/images/big-images/nature_big_9.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa neque, eos quae eaque officia, repellendus dolore tempore cumque quibusdam? Maxime?</p>">
+                          <a href="#"><img src="static/images/nature_small_9.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+              
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init" data-aos="fade" data-src="static/images/big-images/nature_big_9.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, unde quis minus ex impedit necessitatibus nostrum, neque veniam repellat officiis!</p>">
+                          <a href="#"><img src="static/images/nature_small_9.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init" data-aos="fade" data-src="static/images/big-images/nature_big_8.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel eveniet sequi assumenda deserunt ab, tempora commodi autem debitis iusto sed.</p>">
+                          <a href="#"><img src="static/images/nature_small_8.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init" data-aos="fade" data-src="static/images/big-images/nature_big_7.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, quasi, pariatur. Minima provident repellat cum, impedit, nemo exercitationem distinctio consequuntur.</p>">
+                          <a href="#"><img src="static/images/nature_small_7.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init" data-aos="fade" data-src="static/images/big-images/nature_big_6.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus nostrum expedita consequatur rerum laboriosam tempore nisi autem animi eveniet perspiciatis.</p>">
+                          <a href="#"><img src="static/images/nature_small_6.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init" data-aos="fade" data-src="static/images/big-images/nature_big_5.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque consectetur error deserunt facilis facere, consequatur at officia quae culpa voluptatibus!</p>">
+                          <a href="#"><img src="static/images/nature_small_5.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init" data-aos="fade" data-src="static/images/big-images/nature_big_4.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti minima porro, hic dolores. Ab, doloremque facilis numquam, ipsa repellendus voluptas.</p>">
+                          <a href="#"><img src="static/images/nature_small_4.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+              
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init" data-aos="fade" data-src="static/images/big-images/nature_big_3.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, dolor alias. Dignissimos hic voluptatibus dolorum expedita recusandae, consequatur distinctio est.</p>">
+                          <a href="#"><img src="static/images/nature_small_3.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init" data-aos="fade" data-src="static/images/big-images/nature_big_2.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum similique, dolore esse quaerat incidunt ullam sit neque laboriosam velit quas.</p>">
+                          <a href="#"><img src="static/images/nature_small_2.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item aos-init" data-aos="fade" data-src="static/images/big-images/nature_big_1.jpg" data-sub-html="<h4>Fading Light</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem tempora deleniti, consectetur quisquam labore vitae quod quae debitis hic ab!</p>">
+                          <a href="#"><img src="static/images/nature_small_1.jpg" alt="IMage" class="img-fluid"></a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-lg-3 pl-0">
+                    <div class="sidebar">
+                        <h3 class="text-center text-white">Top Authors</h3>
+                        <hr class="bg-white" />
+
+                        <div class="owl-carousel owl-carousel4 owl-theme">
+                            <div>
+                                <div class="card pb-5"> <img class="card-img link-img rounded"
+                                        src="static/images/carlla-willstons.jpg" alt="">
+                                </div>
+                                <h3 class="text-center mt-3 mb-0">Carlla Willstons</h3>
+                                <p class="text-center mt-1 third-clr">Reporter</p>
+                            </div>
+
+                            <div>
+                                <div class="card pb-5"> <img class="card-img link-img rounded"
+                                        src="static/images/carlla-willstons.jpg" alt="">
+                                </div>
+                                <h3 class="text-center mt-3 mb-0">Carlla Willstons</h3>
+                                <p class="text-center mt-1 third-clr">Reporter</p>
+                            </div>
+
+                            <div>
+                                <div class="card pb-5"> <img class="card-img link-img rounded"
+                                        src="static/images/carlla-willstons.jpg" alt="">
+                                </div>
+                                <h3 class="text-center mt-3 mb-0">Carlla Willstons</h3>
+                                <p class="text-center mt-1 third-clr">Reporter</p>
+                            </div>
+
+                            <div>
+                                <div class="card pb-5"> <img class="card-img link-img rounded"
+                                        src="static/images/carlla-willstons.jpg" alt="">
+                                </div>
+                                <h3 class="text-center mt-3 mb-0">Carlla Willstons</h3>
+                                <p class="text-center mt-1 third-clr">Reporter</p>
+                            </div>
+                        </div>
+                        <div class="comment-section mt-5">
+                            <h3>3 Comments</h3>
+                            <hr class="ml-0" />
+                            <div class="media pt-5">
+                                <div class="card mr-4">
+                                    <img src="static/images/comment-user1.png" alt="" class="card-img">
+                                    <div class="card-img-overlay">
+    
+                                    </div>
+                                </div>
+    
+                                <div class="media-body">
+                                    <div class="row">
+                                        <div class="col text-left">
+                                            <h4>John Deo</h4>
+                                        </div>
+                                        <div class="col text-right">
+                                            <p class="my-0"><span>Add 11 Oct 2016</span> <a href="#" class="ml-3">Reply</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla massa et
+                                        tristique convallis. Class aptent taciti sociosqu ad litora torquent per conubia
+                                        nostra, per inceptos himenaeos. Suspendisse orci sem, ultrices sit amet cursus
+                                        vitae, fermentum nec turpis.</p>
+                                    <div class="media py-5 mt-5 both-border">
+                                        <div class="card mr-4">
+                                            <img src="static/images/comment-user2.png" alt="" class="card-img">
+                                            <div class="card-img-overlay">
+    
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="row">
+                                                <div class="col text-left">
+                                                    <h4>Jen Smith</h4>
+                                                </div>
+                                                <div class="col text-right">
+                                                    <p class="my-0"><span>Add 11 Oct 2016</span> <a href="#"
+                                                            class="ml-3">Reply</a></p>
+                                                </div>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla
+                                                massa et tristique convallis. Class aptent taciti sociosqu ad litora
+                                                torquent per conubia nostra, per inceptos himenaeos. Suspendisse orci sem,
+                                                ultrices sit amet cursus vitae, fermentum nec turpis.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+    
+    
+                            <div class="media py-5 bottom-border">
+                                <div class="card mr-4">
+                                    <img src="static/images/comment-user3.png" alt="" class="card-img">
+                                    <div class="card-img-overlay">
+    
+                                    </div>
+                                </div>
+    
+                                <div class="media-body">
+                                    <div class="row">
+                                        <div class="col text-left">
+                                            <h4>John Deo</h4>
+                                        </div>
+                                        <div class="col text-right">
+                                            <p class="my-0"><span>Add 11 Oct 2016</span> <a href="#" class="ml-3">Reply</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla massa et
+                                        tristique convallis. Class aptent taciti sociosqu ad litora torquent per conubia
+                                        nostra, per inceptos himenaeos. Suspendisse orci sem, ultrices sit amet cursus
+                                        vitae, fermentum nec turpis.</p>
+    
+                                </div>
+                            </div>
+    
+    
+                        </div>
+                        <div class="comment-form my-5 pt-5">
+                            <h3>Add Comments</h3>
+                            <hr class="ml-0" />
+                            <hr class="s-br" />
+                            <table class="table table-borderless mt-4">
+                                <tr>
+                                    <td><input type="text" class="form-control" placeholder="Name" /></td>
+                                    <td><input type="email" class="form-control" placeholder="Email" /> </td>
+                                    <td><input type="url" class="form-control" placeholder="Website" /> </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><textarea class="form-control" placeholder="Your comment"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><button class="btn text-uppercase ml-auto d-block">Add Comment</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <h3 class="text-center">Follow Us</h3>
+                        <hr class="mx-auto" />
+                        <nav class="nav nav-fill mx-auto mb-5">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://facebook.com/fh5co" target="_blank"><i
+                                        class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://twitter.com/fh5co" target="_blank"><i
+                                        class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-rss"></i></a>
+                            </li>
+                        </nav>
+
+                        <h3 class="text-center">Instagram</h3>
+                        <hr class="mx-auto" />
+                        <div class="row insta-links mt-2">
+                            <div class="col-md-4 col-sm-6 col-6">
+                                <div class="card">
+                                    <img class="card-img w-100" src="static/images/insta1.png" alt="">
+                                    <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                                        <a href="#"><img src="static/images/right-icon.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-6">
+                                <div class="card">
+                                    <img class="card-img w-100" src="static/images/insta2.png" alt="">
+                                    <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                                        <a href="#"><img src="static/images/right-icon.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-6">
+                                <div class="card">
+                                    <img class="card-img w-100" src="static/images/insta3.png" alt="">
+                                    <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                                        <a href="#"><img src="static/images/right-icon.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-6">
+                                <div class="card">
+                                    <img class="card-img w-100" src="static/images/insta4.png" alt="">
+                                    <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                                        <a href="#"><img src="static/images/right-icon.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-6">
+                                <div class="card">
+                                    <img class="card-img w-100" src="static/images/insta5.png" alt="">
+                                    <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                                        <a href="#"><img src="static/images/right-icon.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-6">
+                                <div class="card">
+                                    <img class="card-img w-100" src="static/images/insta6.png" alt="">
+                                    <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                                        <a href="#"><img src="static/images/right-icon.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="text-center mt-5">Related galleries</h3>
+                        <hr class="mx-auto" />
+                        <div class="tranding-posts mt-4">
+                            <div class="media my-3">
+                                <div class="d-flex align-items-center justify-content-center"><a href="#"><img
+                                            src="static/images/t-post1.png" alt=""></a></div>
+                                <div
+                                    class="media-body text-center d-flex align-items-center justify-content-center flex-column px-3">
+                                    <a href="#">The latest trends
+                                        in Travel</a>
+                                    <p class="mt-1">08 Jan 2019</p>
+                                </div>
+                            </div>
+                            <div class="media my-3">
+                                <div class="d-flex align-items-center justify-content-center"><a href="#"><img
+                                            src="static/images/t-post2.png" alt=""></a></div>
+                                <div
+                                    class="media-body text-center d-flex align-items-center justify-content-center flex-column px-3">
+                                    <a href="#">Effective fine art
+                                        design</a>
+                                    <p class="mt-1">08 Jan 2019</p>
+                                </div>
+                            </div>
+                            <div class="media my-3">
+                                <div class="d-flex align-items-center justify-content-center"><a href="#"><img
+                                            src="static/images/t-post3.png" alt=""></a></div>
+                                <div
+                                    class="media-body text-center d-flex align-items-center justify-content-center flex-column px-3">
+                                    <a href="#">How to design
+                                        your first PSD?</a>
+                                    <p class="mt-1">08 Jan 2019</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+  <footer class="container-fluid pt-5">
+    <div class="container">
+        <h2 class="logo text-center"><a href="index.html">Shahala</a></h2>
+        <nav class="nav nav-fill mx-auto mt-5">
+            <li class="nav-item">
+                <a class="nav-link" href="https://facebook.com/fh5co" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://facebook.com/fh5co" target="_blank"><i
+                        class="fab fa-twitter"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-rss"></i></a>
+            </li>
+        </nav>
+    </div>
+    <div class="copyright mt-4">
+        <p class="text-center">&copy; 2021 <a href="index.html" class="text-white">Shahala</a>. All Rights Reserved. Design
+            by <a href="https://oceantics.net" target="_blank" class="text-white">Oceantics Inc.</a>.</p>
+    </div>
+</footer>
+
+  <script src="static/js/popper.min.js"></script>
+  <script src="static/js/jquery-1.12.0.min.js"></script>
+  <script src="static/js/bootstrap.min.js"></script>
+  <script src="static/js/owl.carousel.min.js"></script>
+  <script src="static/js/jquery.yu2fvl.js"></script>
+  
+<script src="static/js/picturefill.min.js"></script>
+<script src="static/js/lightgallery-all.min.js"></script>
+<script src="static/js/jquery.mousewheel.min.js"></script>
+<script src="static/js/article.js"></script>
+<script src="static/js/gallery.js"></script>
+
+</body>
+</html>
